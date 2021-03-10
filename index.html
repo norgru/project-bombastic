@@ -2,12 +2,14 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="Norman Grundy's journey through HTML">
+        <meta name="description" content="Norman Grundy's journey through HTML + CSS">
         <meta name="author" content="Norman Grundy">
         <meta name="keywords" content="HTML, learning, tutorial, beginner">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Norman Fernando Grundy</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css"> <!--This is how you attach a css file-->
+
+        <title>Norman's CSS Wizardry</title>
     </head>
     <body>
         <!-- This is a comment - REMEMBER THE START AND END -->
@@ -78,73 +80,75 @@
         <hr> <!-- horizontal rule -->
         <br>
 
-        <!-- Time to make a form -->
-        <form action="process.php" method="POST"> <!-- attribute 'action' submits form to certain process.php form, could be a register form, 'method' attribute is going to be POST which adds data to database, 'GET' request does the same but can see form in URL.-->
-            <div>
-                <label>First name:</label>
-                <input type="text" name="firstName"> <!--name here has to be whatever process.php needs, get it?-->
-            </div>
+        <div class="box-1">
+           <!-- Time to make a form -->
+           <form action="process.php" method="POST"> <!-- attribute 'action' submits form to certain process.php form, could be a register form, 'method' attribute is going to be POST which adds data to database, 'GET' request does the same but can see form in URL.-->
+               <div>
+                   <label>First name:</label>
+                   <input type="text" name="firstName"> <!--name here has to be whatever process.php needs, get it?-->
+               </div>
 
-            <br>
+               <br>
 
-            <div>
-                <label>Last name:</label>
-                <input type="text" name="lastName" placeholder="Enter last name">
+               <div>
+                   <label>Last name:</label>
+                   <input type="text" name="lastName" placeholder="Enter last name">
 
-            </div>
+               </div>
 
-            <br>
+               <br>
 
-            <div>
-                <label>Phone number</label>
-                <input type="tel" name="mobileNo" placeholder="Numeric keypad pops up if on mobile here" size="40">
+               <div>
+                   <label>Phone number</label>
+                   <input type="tel" name="mobileNo" placeholder="Numeric keypad pops up if on mobile here" size="40">
 
-            </div>
+               </div>
 
-            <br>
+               <br>
 
-            <div>
-                <label>E-mail:</label>
-                <input type="email" name="email" value="already typed in, not placeholder">
-            </div>
+               <div>
+                   <label>E-mail:</label>
+                   <input type="email" name="email" value="already typed in, not placeholder">
+               </div>
 
-            <br>
+               <br>
 
-            <div>
-                <label>Message:</label>
-                <textarea name="message" rows="1"></textarea>
-            </div>
+               <div>
+                   <label>Message:</label>
+                   <textarea name="message" rows="1"></textarea>
+               </div>
 
-            <br>
+               <br>
 
-            <div>
-                <label>Best description:</label>
-                <select name="gender">
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-            
-            <br>
+               <div>
+                   <label>Best description:</label>
+                   <select name="gender">
+                       <option value="male">Male</option>
+                       <option value="female">Female</option>
+                       <option value="other">Other</option>
+                   </select>
+               </div>
 
-            <div>
-                <label>Age:</label>
-                <input type="number" name="age" value="30">
-            </div>
+               <br>
 
-            <br>
+               <div>
+                   <label>Age:</label>
+                   <input type="number" name="age" value="30">
+               </div>
 
-            <div>
-                <label>Birthday:</label>
-                <input type="date" name="birthday">
-            </div>
+               <br>
 
-            <br>
+               <div>
+                   <label>Birthday:</label>
+                   <input type="date" name="birthday">
+               </div>
 
-            <input type="submit" name="submit" value="Submit this">
+               <br>
 
-        </form>
+               <input type="submit" name="submit" value="Submit this">
+
+           </form>
+        </div>
 
         <!--Time to make a button-->
         <button>Click here</button>
@@ -190,6 +194,50 @@
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="200">
                 <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 100-2 1 1 0 000 2zm7-1a1 1 0 11-2 0 1 1 0 012 0zm-.464 5.535a1 1 0 10-1.415-1.414 3 3 0 01-4.242 0 1 1 0 00-1.415 1.414 5 5 0 007.072 0z" clip-rule="evenodd" />
             </svg>
+        </div>
+
+        <div>
+            
+<svg width="309" height="162" viewBox="0 0 309 162" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <g id="zoomin">
+    <path id="Vector 2" d="M1.46479 46.0657C1.46479 61.4597 0.858493 82.0645 12.6881 93.8941C16.7195 97.9256 22.4133 95.7375 25.4653 92.6855C32.4373 85.7135 35.6526 79.3155 35.6526 69.3756C35.6526 66.8724 35.3215 64.0884 35.6526 61.6056C35.9363 59.4781 42.159 70.4632 42.6455 71.7066C46.4702 81.4808 52.6266 82.4316 61.2934 87.2465C80.3739 97.8468 74.5023 53.7546 74.5023 47.6197" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 3" d="M100.92 44.5117C92.92 54.3943 84.2601 72.5819 99.2799 81.0305C108.102 85.9932 120.694 87.9244 125.784 77.1455C131.357 65.3431 127.979 44.6444 116.46 37.6051C110.227 33.7962 94.4178 32.939 91.5962 41.4037" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 4" d="M136.662 33.6338C144.292 39.1695 149.95 44.9366 153.411 53.8357C155.08 58.1295 155.508 63.9707 158.763 67.4763C164.631 73.7953 169.494 68.0328 173.958 63.0733C180.569 55.7275 182.14 47.7952 183.195 38.2958C183.525 35.3334 182.729 32.5878 181.728 29.8352C179.977 25.0214 188.417 33.0045 189.152 33.9791C201.68 50.5915 212.863 78.26 228.347 48.3967C237.45 30.8408 228.024 15.8923 220.577 1" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 5" d="M6.12676 120.657C14.3835 119.281 25.4735 117.543 32.3719 112.369C42.3482 104.887 19.5831 133.814 12.3427 143.967C8.70441 149.069 -5.05847 161.583 7.42175 160.975C18.3966 160.439 29.4221 159.315 40.3145 157.953" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 6" d="M54.3005 125.319C37.2313 148.789 71.4939 154.52 74.157 141.204C76.4688 129.646 62.2821 111.122 51.1925 122.211" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 7" d="M99.3662 112.887C92.0397 112.887 76.5854 110.035 76.747 121.348C76.8696 129.932 82.8669 147.506 93.2366 148.543C104.76 149.695 107.473 137.225 107.05 128.341C106.845 124.04 103.934 100.549 97.8122 106.671" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 8" d="M114.906 105.117C118.315 116.338 119.568 126.544 119.568 138.183C119.568 143.881 119.851 131.784 119.913 131.19C121.099 119.929 125.719 109.543 130.36 99.3331C136.893 84.9599 140.574 105.682 141.238 111.765C144.923 145.544 148.047 103.87 154.619 108.053C160.039 111.502 167.267 138.701 164.634 143.967" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 9" d="M205.038 102.009C211.643 111.786 211.254 121.715 211.254 133.089" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 10" d="M203.484 75.5916C201.092 87.8503 200.515 81.3449 205.815 80.1672C211.804 78.8361 210.322 75.5916 205.038 75.5916" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 11" d="M233.009 77.1455C237.725 89.327 240.779 105.047 240.779 118.326C240.779 130.324 239.028 93.3084 244.233 82.4982C248.948 72.7054 257.779 78.2563 263.226 84.1385C271.811 93.4106 271.263 104.883 274.967 115.995" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 12" d="M288.953 81.8075C278.071 67.6278 274.967 54.2594 274.967 36.8281C274.967 27.762 277.377 18.0057 283.428 32.8568C287.232 42.1935 285.845 52.9292 285.845 62.8143C285.845 70.7838 287.399 79.3073 287.399 86.4695" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 13" d="M293.615 108.225C292.79 115.104 292.915 122.738 301.385 123.679C308.048 124.419 307.601 120.147 307.601 114.787C307.601 105.518 305.497 104.478 296.723 106.671" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 14" d="M78.3727 118.155C78.0854 118.534 77.8805 119.173 78.2653 119.557C78.4491 119.741 78.9396 119.687 79.0907 119.484C79.2881 119.218 79.2288 118.709 79.0068 118.487" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 15" d="M78.8558 118.185C79.2164 118.336 79.5306 118.684 79.8238 118.94C80.0561 119.143 80.2315 119.38 80.4495 119.598C80.6787 119.827 80.7841 120.194 80.6223 120.482C80.5434 120.622 80.5019 120.716 80.3488 120.767C80.1928 120.819 79.9922 120.81 79.8523 120.903" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 16" d="M78.8558 117.128C79.1529 117.31 79.3823 117.576 79.6778 117.762C79.8501 117.871 80.277 117.948 80.3656 118.125" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 17" d="M79.4295 117.249C79.4358 116.985 79.7496 116.275 80.124 116.524" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 18" d="M81.2715 115.437C81.066 115.526 80.92 115.694 80.8353 115.902C80.7676 116.068 80.8379 116.113 80.9393 116.253C81.0863 116.455 81.3482 116.593 81.6036 116.548C82.1895 116.445 82.31 115.256 81.6036 115.256" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 19" d="M82.2679 115.679C82.3397 115.863 82.4178 115.95 82.5548 116.087C82.6153 116.147 82.7851 116.17 82.8114 116.223" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 20" d="M84.1702 114.139C83.6509 114.065 83.3612 114.846 83.5663 115.256C83.7377 115.599 84.0519 115.649 84.4118 115.649" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 21" d="M85.3781 113.746C85.3347 113.812 85.2836 113.874 85.3781 113.897" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 22" d="M85.529 114.924C85.6161 115.201 85.6505 115.5 85.7404 115.77" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 23" d="M87.2804 113.777C86.957 113.834 86.8717 113.933 86.7822 114.231C86.7205 114.437 86.6566 114.693 86.7738 114.887C86.8602 115.03 86.9962 115.226 87.1747 115.226C87.2626 115.226 87.3994 115.231 87.4314 115.135" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 24" d="M87.7937 113.746C87.7937 114.041 87.9525 115.075 88.3976 115.075" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 25" d="M90.0886 113.535C89.9481 113.485 89.8474 113.474 89.7413 113.58C89.6894 113.632 89.5783 113.704 89.5752 113.783C89.5675 113.985 89.9061 114.212 90.0282 114.337C90.1541 114.466 90.2414 114.711 90.0818 114.87C89.9755 114.977 89.7686 115.021 89.6356 114.954" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 26" d="M92.8967 113.807C92.7157 113.861 92.6355 113.879 92.5461 114.037C92.4621 114.185 92.3436 114.303 92.2861 114.464C92.2417 114.589 92.1442 114.699 92.115 114.83C92.0894 114.945 92.2486 114.99 92.3247 115.031C92.5931 115.179 92.9536 115.434 93.2725 115.268C93.4709 115.165 93.4472 114.809 93.4638 114.622C93.4779 114.463 93.5015 114.15 93.3497 114.048" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 27" d="M93.5007 114.26C93.604 114.558 93.7526 114.944 94.014 115.149C94.0819 115.202 94.2882 115.261 94.3159 115.317" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 28" d="M96.6712 113.777C96.6323 113.981 96.5672 114.164 96.5068 114.362C96.4538 114.536 96.49 114.756 96.49 114.938C96.49 115.113 96.5056 115.283 96.5437 115.454C96.561 115.532 96.6146 115.569 96.641 115.649" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 29" d="M98.2414 114.471C97.8316 114.315 97.6296 114.69 97.6375 115.052C97.6447 115.386 97.7918 115.619 98.1206 115.619" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 30" d="M98.5735 114.743C98.6183 115.037 98.7357 115.528 99.117 115.528" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 31" d="M100.678 114.106C100.789 114.637 101.036 115.131 101.036 115.679C101.036 115.909 101.706 114.45 101.822 114.392" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 32" d="M102.895 115.536C102.453 115.641 102.054 115.93 101.679 116.18" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 33" d="M103.972 115.179C103.777 115.102 103.769 115.144 103.884 115.297" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 34" d="M102.996 116.895C102.973 116.591 102.492 116.837 102.338 116.954C102.243 117.026 102.028 117.209 102.082 117.355C102.156 117.56 102.373 117.605 102.565 117.605C102.672 117.605 102.815 117.633 102.907 117.569C102.976 117.521 103.047 117.432 103.114 117.398" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 35" d="M102.197 118.227C102.12 118.334 102.12 118.363 102.233 118.273C102.395 118.144 102.574 118.067 102.766 117.99C103.077 117.865 103.375 117.711 103.693 117.605C103.845 117.555 103.988 117.486 104.143 117.451C104.25 117.427 104.333 117.339 104.446 117.339" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 36" d="M103.676 118.878C103.318 118.878 103.045 118.928 102.761 119.159C102.649 119.25 102.485 119.508 102.655 119.603C102.787 119.676 102.844 119.82 102.966 119.907C103.09 119.995 103.376 120.003 103.528 120.003C103.723 120.003 103.869 119.932 103.92 119.73C103.954 119.592 103.955 119.594 103.913 119.47" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    <path id="Vector 37" d="M103.085 120.151C103.012 120.223 102.729 120.404 102.729 120.521C102.729 120.693 102.748 120.817 102.789 120.979" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    </svg>
         </div>
 
 

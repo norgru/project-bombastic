@@ -5,6 +5,25 @@
 }
 */
 
+a:hover{ /*the property of hover of 'a'*/
+    animation-name: bigtosmall;
+    animation:bigtosmall forwards 200ms;
+}
+
+@keyframes bigtosmall{
+    from{
+        font-size: 1em;
+    }
+    
+    to{
+        font-size: 8em;
+    }
+}
+
+a:visited{
+    color: deeppink;
+}
+
 body{
     background-color: #f4f4f4;
     color: #555555; /*changes text colour*/
